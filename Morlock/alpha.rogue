@@ -1,0 +1,11 @@
+class AlphaPackage : Package
+  # Base class Package is defined here:
+  # https://github.com/AbePralle/Morlock/blob/main/Source/Package.rogue
+  PROPERTIES
+    name = "abepralle/alpha"
+
+  METHODS
+    method install
+      prior.install
+      dependency "abepralle/beta@1.0"
+endClass
